@@ -43,6 +43,7 @@
             // kamera_ac
             // 
             this.kamera_ac.BackColor = System.Drawing.Color.White;
+            this.kamera_ac.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.kamera_ac.Location = new System.Drawing.Point(82, 235);
             this.kamera_ac.Name = "kamera_ac";
             this.kamera_ac.Size = new System.Drawing.Size(75, 51);
@@ -54,9 +55,10 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(82, 51);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox1.Location = new System.Drawing.Point(82, 187);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(259, 20);
+            this.textBox1.Size = new System.Drawing.Size(259, 29);
             this.textBox1.TabIndex = 1;
             // 
             // pictureBox1
@@ -72,6 +74,7 @@
             // tara
             // 
             this.tara.BackColor = System.Drawing.Color.White;
+            this.tara.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tara.Location = new System.Drawing.Point(173, 235);
             this.tara.Name = "tara";
             this.tara.Size = new System.Drawing.Size(75, 51);
@@ -83,31 +86,35 @@
             // ekle
             // 
             this.ekle.BackColor = System.Drawing.Color.White;
+            this.ekle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ekle.Location = new System.Drawing.Point(266, 235);
             this.ekle.Name = "ekle";
             this.ekle.Size = new System.Drawing.Size(75, 51);
             this.ekle.TabIndex = 0;
-            this.ekle.Text = "Oluştur";
+            this.ekle.Text = "Kod Oluştur";
             this.ekle.UseVisualStyleBackColor = false;
             this.ekle.Click += new System.EventHandler(this.ekle_Click);
             // 
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.Color.White;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(173, 111);
+            this.comboBox1.Location = new System.Drawing.Point(173, 34);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(168, 21);
+            this.comboBox1.Size = new System.Drawing.Size(168, 28);
             this.comboBox1.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(79, 119);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(44, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(113, 24);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Kamera";
+            this.label1.Text = "Kamera Seç";
             // 
             // timer1
             // 

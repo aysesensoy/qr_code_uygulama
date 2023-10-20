@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MessagingToolkit.QRCode;
-using MessagingToolkit.QRCode.Codec;
+
+using QRCoder;
 
 
 namespace qr_code_okuma
@@ -19,13 +19,17 @@ namespace qr_code_okuma
         {
             InitializeComponent();
         }
-        QRCodeDecoder code = new QRCodeDecoder();
-        Image resim;
+    
 
         private void ekle_Click(object sender, EventArgs e)
         {
-            resim = code.Encode(textBox1.Text);
-            pictureBox1 .Image = resim;
+          
+            string metin_Code = textBox1.Text;
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(metin_Code, QRCodeGenerator.ECCLevel.Q);
+            QRCode qrCode = new QRCode(qrCodeData);
+            Bitmap qrCodeImage = qrCode.GetGraphic(20);
+            pictureBox1.Image = qrCodeImage;
         }
     }
 }
